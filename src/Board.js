@@ -9,7 +9,7 @@ import "./App.css";
  *
  * - nrows: number of rows of board
  * - ncols: number of cols of board
- * - chanceLightStartsOn: float, chance any cell is lit at start of game
+ * - lit: array of booleans
  *
  * State:
  *
@@ -99,12 +99,6 @@ class Board extends Component {
 
             if (x === nrows - 1) board[y][west] = !board[y][west]
 
-
-
-
-            // if (board[sud][x]) board[sud][x] = !board[sud][x]
-            // if (board[y][east]) board[y][east] = !board[y][east]
-            // if (board[y][west]) board[y][west] = !board[y][west]
           };
         })
       }
